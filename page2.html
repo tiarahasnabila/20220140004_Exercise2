@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Booking Tiket</h1>
+        <form onsubmit="return kirimData();">
+            <div class="form-group">
+                <label for="Nama">Nama</label>
+                <input type="text" id="Nama" name="Nama" placeholder="Masukkan Nama anda" required>
+            </div>
+            <div class="form-group">
+                <label for="No Telepon">No Telepon</label>
+                <input type="text" id="No Telepon" name="No Telepon" required>
+            </div>
+            <div class="form-group">
+                <label for="peminatan">Peminatan</label>
+                <select id="Pilih Film" name="Pilih Film" aria-label="Pilih Film" required>
+                    <option value="Despicable Me">Despicable Me</option>
+                    <option value="Transforms">Transforms</option>
+                    <option value="Pororo">Pororo</option>
+                    <option value="Bis Tayo">Bis Tayo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" placeholder="Masukkan alamat anda"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="Jumlah Tiket">Jumlah Tiket</label>
+                <input type="number" id="Jumlah Tiket" name="Jumlah Tiket" value="1">
+            </div>            
+            <div class="form-group">
+                <label for="tanggal">Tanggal</label>
+                <input type="date" id="tanggal" name="tanggal">
+            </div>
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
